@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Film İncelemeleri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Film İncelemeleri</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="contact.html">İletişim</a>
+        </nav>
+    </header>
+
+    <section class="contact-form">
+        <h2>       Bizimle İletişime Geçin</h2>
+        <form action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">İsminiz:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="movie">İncelenmesini İstediğiniz Film:</label>
+                <select id="movie" name="movie" required>
+                    <option value="The Shawshank Redemption">The Shawshank Redemption</option>
+                    <option value="The Godfather">The Godfather</option>
+                    <option value="The Dark Knight">The Dark Knight</option>
+                    <option value="12 Angry Men">12 Angry Men</option>
+                    <option value="Schindler's List">Schindler's List</option>
+                    <option value="The Lord of the Rings: The Return of the King">The Lord of the Rings: The Return of the King</option>
+                    <option value="Pulp Fiction">Pulp Fiction</option>
+                    <option value="The Good, the Bad and the Ugly">The Good, the Bad and the Ugly</option>
+                    <option value="The Lord of the Rings: The Fellowship of the Ring">The Lord of the Rings: The Fellowship of the Ring</option>
+                    <option value="Forrest Gump">Forrest Gump</option>
+                    <option value="Inception">Inception</option>
+                    <option value="Star Wars: Episode V - The Empire Strikes Back">Star Wars: Episode V - The Empire Strikes Back</option>
+                    <option value="The Matrix">The Matrix</option>
+                    <option value="Goodfellas">Goodfellas</option>
+                    <option value="One Flew Over the Cuckoo's Nest">One Flew Over the Cuckoo's Nest</option>
+                    <option value="Se7en">Se7en</option>
+                    <option value="The Silence of the Lambs">The Silence of the Lambs</option>
+                    <option value="City of God">City of God</option>
+                    <option value="Life Is Beautiful">Life Is Beautiful</option>
+                    <option value="The Usual Suspects">The Usual Suspects</option>
+                    <option value="Léon: The Professional">Léon: The Professional</option>
+                    <option value="The Intouchables">The Intouchables</option>
+                    <option value="Spirited Away">Spirited Away</option>
+                    <option value="Saving Private Ryan">Saving Private Ryan</option>
+                    <option value="The Green Mile">The Green Mile</option>
+                    <option value="Interstellar">Interstellar</option>
+                    <option value="Parasite">Parasite</option>
+                    <option value="The Lion King">The Lion King</option>
+                    <option value="Back to the Future">Back to the Future</option>
+                    <option value="The Prestige">The Prestige</option>
+                    <option value="The Departed">The Departed</option>
+                    <option value="Whiplash">Whiplash</option>
+                    <option value="Gladiator">Gladiator</option>
+                    <option value="The Dark Knight Rises">The Dark Knight Rises</option>
+                    <option value="Memento">Memento</option>
+                    <option value="The Shining">The Shining</option>
+                    <option value="The Social Network">The Social Network</option>
+                    <option value="The Pianist">The Pianist</option>
+                    <option value="Joker">Joker</option>
+                    <option value="Se7en">Se7en</option>
+                    <option value="The Great Escape">The Great Escape</option>
+                    <option value="A Clockwork Orange">A Clockwork Orange</option>
+                    <option value="Oldboy">Oldboy</option>
+                    <option value="Fight Club">Fight Club</option>
+                    <option value="American History X">American History X</option>
+                    <option value="The Terminator">The Terminator</option>
+                    <option value="Citizen Kane">Citizen Kane</option>
+                    <option value="12 Years a Slave">12 Years a Slave</option>
+                    <option value="Schindler's List">Schindler's List</option>
+                    <option value="The Wizard of Oz">The Wizard of Oz</option>
+                    <option value="Blade Runner 2049">Blade Runner 2049</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="agreement">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <span class="agreement-text">Kullanıcı sözleşmesini kabul ediyorum</span>
+                </label>
+            </div>
+            
+            <div class="contact-extra">
+                <p style="display: flex; align-items: center;">
+                    Bize WhatsApp üzerinden de ulaşabilirsiniz
+                    <span style="margin-left: 10px;">
+                        <img src="https://png.pngtree.com/element_our/md/20180626/md_5b321c99945a2.jpg" alt="WhatsApp" style="width: auto; height: 40px;">
+                    </span> 
+                    <span style="margin-left: 10px;">05533322727</span>
+                </p>
+                <button type="button" onclick="window.location.href='https://wa.me/05533322727';">WhatsApp ile İletişime Geç</button>
+                <button type="submit">Gönder</button>
+            </div>
+        </form>
+    </section>
+
+<section class="map">
+    <h2 style="text-align: center;">Konumumuz</h2>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1fcdazazmfE-U8JhefjJmGOfZjNjVbwA&ll=40.234146872295696%2C28.99910399999998&z=18" width="80%" height="400px" style="margin: 0 auto; display: block;"></iframe>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
